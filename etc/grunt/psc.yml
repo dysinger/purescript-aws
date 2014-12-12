@@ -1,0 +1,6 @@
+test:
+  src:
+  - "tests/**/*.purs"
+  - "src/**/*.purs"
+  - "bower_components/purescript-*/src/**/*.purs"
+  dest: test.js

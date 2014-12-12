@@ -1,0 +1,33 @@
+{
+  "author": {
+    "name": "Tim Dysinger",
+    "url": "http://github.com/dysinger/"
+  },
+  "dependencies": {
+    "aws-sdk": "*"
+  },
+  "description": "Purescript AWS SDK",
+  "devDependencies": {
+    "bower": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-configure": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-copy": "*",
+    "grunt-execute": "*",
+    "grunt-purescript": "*",
+    "load-grunt-tasks": "*",
+    "node-inspector": "*",
+    "time-grunt": "*"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "name": "purescript-aws",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dysinger/purescript-aws.git"
+  },
+  "version": "0.1.0"
+}

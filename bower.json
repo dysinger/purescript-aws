@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "purescript-foreign": "*",
+    "purescript-parallel": "*",
+    "purescript-strings": "*"
+  },
+  "devDependencies": {
+    "purescript-quickcheck": "*"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules"
+  ],
+  "name": "purescript-aws"
+}
