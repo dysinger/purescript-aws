@@ -13,7 +13,7 @@ module.exports = function(grunt) {
     require("grunt-configure")("./etc/grunt/*.{js,json,yml}")
   );
 
-  grunt.registerTask("build",   [ "psc:main", "dotPsci" ]);
+  grunt.registerTask("build",   [ "dotPsci" ]);
   grunt.registerTask("test",    [ "psc:test", "execute:test" ]);
   grunt.registerTask("dev",     [ "build", "watch" ]);
   grunt.registerTask("default", [ "build" ]);
