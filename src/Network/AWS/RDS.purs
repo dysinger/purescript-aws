@@ -55,9 +55,7 @@ foreign import describeDBEvents
 foreign import describeDBSnapshots
   """
   function describeDBSnapshots(rds) {
-    return function() {
-      return rds.describeDBSnapshots();
-    }
+    return rds.describeDBSnapshots();
   }
   """
   :: RDS -> Request
