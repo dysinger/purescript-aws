@@ -17,9 +17,9 @@ foreign import data S3  :: *
 
 foreign import data Request :: *
 
-type WithAWS e = Eff (aws :: AWS | e)
+type AwsEff e = Eff (aws :: AWS | e)
 
-type AwsFn a b e r = a -> b -> WithAWS e r
+type AwsFn a b e r = a -> b -> AwsEff e r
 
 foreign import data AwsCallback :: # ! -> *
 

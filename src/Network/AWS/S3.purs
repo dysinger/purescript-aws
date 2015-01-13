@@ -44,7 +44,7 @@ foreign import createBucket
      S3
   -> {"Bucket" :: String | r}
   -> AwsCallback e1
-  -> WithAWS e2 Unit
+  -> AwsEff e2 Unit
 
 foreign import headBucket
   """
@@ -62,7 +62,7 @@ foreign import headBucket
      S3
   -> {"Bucket" :: String | r}
   -> AwsCallback e1
-  -> WithAWS e2 Unit
+  -> AwsEff e2 Unit
 
 foreign import getBucketLocation
   """
@@ -80,7 +80,7 @@ foreign import getBucketLocation
      S3
   -> {"Bucket" :: String | r}
   -> AwsCallback e1
-  -> WithAWS e2 Unit
+  -> AwsEff e2 Unit
 
 foreign import getBucketLogging
   """
@@ -98,7 +98,7 @@ foreign import getBucketLogging
      S3
   -> {"Bucket" :: String | r}
   -> AwsCallback e1
-  -> WithAWS e2 Unit
+  -> AwsEff e2 Unit
 
 foreign import putBucketLogging
   """
@@ -122,7 +122,7 @@ foreign import putBucketLogging
                               | r2 } }
      | r3 }
   -> AwsCallback e1
-  -> WithAWS e2 Unit
+  -> AwsEff e2 Unit
 
 foreign import listObjects
   """

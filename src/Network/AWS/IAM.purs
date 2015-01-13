@@ -31,7 +31,7 @@ foreign import getUser
     }
   }
   """
-  :: forall a e. IAM -> {|a} -> AwsCallback e -> WithAWS e Unit
+  :: forall a e. IAM -> {|a} -> AwsCallback e -> AwsEff e Unit
 
 iamUserAccountId :: forall r. { "Arn" :: String | r } -> String
 iamUserAccountId { "Arn" = arn } = acctId $ split ":" arn

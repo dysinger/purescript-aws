@@ -112,4 +112,4 @@ foreign import ec2DeleteSnapshot
      EC2
   -> {"SnapshotId" :: String | a}
   -> AwsCallback e1
-  -> WithAWS e2 Unit
+  -> AwsEff e2 Unit

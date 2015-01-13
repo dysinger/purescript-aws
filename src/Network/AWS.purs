@@ -43,10 +43,10 @@ foreign import send
   """
   :: forall a e r.
      Request
-  -> ({|a} -> WithAWS e r)    -- success  callback
-  -> ({|a} -> WithAWS e Unit) -- error    callback
-  -> WithAWS e Unit           -- complete callback
-  -> WithAWS e Unit
+  -> ({|a} -> AwsEff e r)    -- success  callback
+  -> ({|a} -> AwsEff e Unit) -- error    callback
+  -> AwsEff e Unit           -- complete callback
+  -> AwsEff e Unit
 
 foreign import eachItem
   """
@@ -58,4 +58,4 @@ foreign import eachItem
     }
   }
   """
-  :: forall r e1 e2. Request -> AwsCallback e1 -> WithAWS e2 r
+  :: forall r e1 e2. Request -> AwsCallback e1 -> AwsEff e2 r
