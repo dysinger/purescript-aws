@@ -1,12 +1,5 @@
-{-
-  Author    : Tim Dysinger
-  Copyright : 2014
-  License   : MIT
--}
+module Test.Main where
 
-module Main where
-
-import Control.Monad.Eff
 import Debug.Trace
 import Test.QuickCheck
 

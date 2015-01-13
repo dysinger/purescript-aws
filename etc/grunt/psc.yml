@@ -1,6 +1,9 @@
 test:
+  options:
+    main: Test.Main
+    module: Test.Main
   src:
-  - "tests/**/*.purs"
+  - "test/**/*.purs"
   - "src/**/*.purs"
   - "bower_components/purescript-*/src/**/*.purs"
   dest: test.js
